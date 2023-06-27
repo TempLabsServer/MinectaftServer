@@ -1,0 +1,78 @@
+[22:13:27] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[22:13:28] [ServerMain/INFO]: Loaded 7 recipes
+[22:13:28] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[22:13:28] [Server thread/INFO]: Loading properties
+[22:13:28] [Server thread/INFO]: This server is running Folia version git-Folia-"34039e3" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 34039e3)
+[22:13:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:13:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:13:28] [Server thread/WARN]: [!] The timings system cannot be enabled on Folia, and has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[22:13:28] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[22:13:28] [Server thread/INFO]: [io.papermc.paper.threadedregions.TickRegions] Regionised ticking is enabled with 1 tick threads
+[22:13:29] [Server thread/INFO]: Default game type: SURVIVAL
+[22:13:29] [Server thread/INFO]: Generating keypair
+[22:13:29] [Server thread/INFO]: Starting Minecraft server on *:25565
+[22:13:29] [Server thread/INFO]: Using default channel type
+[22:13:29] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[22:13:29] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[22:13:29] [Server thread/INFO]: [UnifiedMetrics] Loading server plugin UnifiedMetrics v0.3.9-SNAPSHOT
+[22:13:29] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.1.1-SNAPSHOT
+[22:13:29] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[22:13:29] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[22:13:29] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.3.92
+[22:13:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:13:29] [Server thread/INFO]: [UnifiedMetrics] Enabling UnifiedMetrics v0.3.9-SNAPSHOT
+[22:13:29] [Server thread/INFO]: [UnifiedMetrics] Initializing driver 'prometheus'.
+[22:13:29] [Server thread/INFO]: [UnifiedMetrics] Driver 'prometheus' initialized (24 ms).
+[22:13:29] [Server thread/INFO]: Preparing level "world"
+[22:13:30] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:13:30] [Server thread/INFO]: Time elapsed: 5 ms
+[22:13:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[22:13:30] [Server thread/INFO]: Time elapsed: 3 ms
+[22:13:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[22:13:30] [Server thread/INFO]: Time elapsed: 2 ms
+[22:13:30] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.1.1-SNAPSHOT
+[22:13:30] [Server thread/INFO]: [Chunky] Enabling Chunky v1.3.92
+[22:13:30] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[22:13:30] [Server thread/INFO]: [Geyser-Spigot] 
+[22:13:30] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.1.1-SNAPSHOT (git-master-c7304f0)
+[22:13:30] [Server thread/INFO]: [Geyser-Spigot] 
+[22:13:30] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[22:13:32] [Server thread/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
+[22:13:32] [Server thread/INFO]: [Geyser-Spigot] Done (1.746s)! Run /geyser help for help!
+[22:13:32] [Server thread/INFO]: Done (3.578s)! For help, type "help"
+[22:13:32] [Geyser Spigot connection thread-5-2/WARN]: [Geyser-Spigot] Could not initialize compression disabler!
+java.lang.ClassNotFoundException: net.minecraft.server.v1_20_R1.PacketLoginOutSetCompression
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:183) ~[folia-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:150) ~[folia-api-1.20.1-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:375) ~[?:?]
+	at org.geysermc.geyser.platform.spigot.GeyserSpigotCompressionDisabler.findCompressionPacket(GeyserSpigotCompressionDisabler.java:102) ~[Geyser-Spigot.jar:?]
+	at org.geysermc.geyser.platform.spigot.GeyserSpigotCompressionDisabler.<clinit>(GeyserSpigotCompressionDisabler.java:55) ~[Geyser-Spigot.jar:?]
+	at org.geysermc.geyser.platform.spigot.GeyserSpigotInjector$1.initChannel(GeyserSpigotInjector.java:123) ~[Geyser-Spigot.jar:?]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:129) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:112) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.callHandlerAdded(AbstractChannelHandlerContext.java:1114) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:609) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$100(DefaultChannelPipeline.java:46) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1463) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1115) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:650) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:514) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.channel.DefaultEventLoop.run(DefaultEventLoop.java:54) ~[netty-transport-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.87.Final.jar:4.1.87.Final]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+[22:13:32] [Region Scheduler Thread #0/INFO]: Initialising world 'world' before it can be ticked...
+[22:13:32] [Region Scheduler Thread #0/INFO]: Initialised world 'world'
+[22:13:32] [Region Scheduler Thread #0/INFO]: Timings Reset
+[22:13:32] [Region Scheduler Thread #0/INFO]: Initialising world 'world_nether' before it can be ticked...
+[22:13:32] [Region Scheduler Thread #0/INFO]: Initialised world 'world_nether'
+[22:13:32] [Region Scheduler Thread #0/INFO]: Initialising world 'world_the_end' before it can be ticked...
+[22:13:32] [Region Scheduler Thread #0/INFO]: Initialised world 'world_the_end'

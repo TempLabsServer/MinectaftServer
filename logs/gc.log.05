@@ -1,0 +1,82 @@
+[2023-06-26T21:37:35.185-0500][0.003s] Min heap equals to max heap, disabling ShenandoahUncommit
+[2023-06-26T21:37:35.381-0500][0.198s] Heuristics ergonomically sets -XX:+ExplicitGCInvokesConcurrent
+[2023-06-26T21:37:35.381-0500][0.198s] Heuristics ergonomically sets -XX:+ShenandoahImplicitGCInvokesConcurrent
+[2023-06-26T21:37:35.381-0500][0.199s] Using Shenandoah
+[2023-06-26T21:37:35.804-0500][0.622s] Version: 17.0.7+7 (release)
+[2023-06-26T21:37:35.804-0500][0.622s] CPUs: 8 total, 8 available
+[2023-06-26T21:37:35.804-0500][0.622s] Memory: 32693M
+[2023-06-26T21:37:35.804-0500][0.622s] Large Page Support: Enabled
+[2023-06-26T21:37:35.804-0500][0.622s] NUMA Support: Disabled
+[2023-06-26T21:37:35.804-0500][0.622s] Compressed Oops: Enabled (Zero based)
+[2023-06-26T21:37:35.805-0500][0.623s] Heap Min Capacity: 16G
+[2023-06-26T21:37:35.805-0500][0.623s] Heap Initial Capacity: 16G
+[2023-06-26T21:37:35.805-0500][0.623s] Heap Max Capacity: 16G
+[2023-06-26T21:37:35.805-0500][0.623s] Pre-touch: Enabled
+[2023-06-26T21:37:35.805-0500][0.623s] Mode: Snapshot-At-The-Beginning (SATB)
+[2023-06-26T21:37:35.805-0500][0.623s] Heuristics: Adaptive
+[2023-06-26T21:37:35.805-0500][0.623s] Heap Region Count: 2048
+[2023-06-26T21:37:35.805-0500][0.623s] Heap Region Size: 8M
+[2023-06-26T21:37:35.805-0500][0.623s] TLAB Size Max: 8M
+[2023-06-26T21:37:35.805-0500][0.623s] Humongous Object Threshold: 8M
+[2023-06-26T21:37:35.805-0500][0.623s] Parallel Workers: 10
+[2023-06-26T21:37:35.805-0500][0.623s] Concurrent Workers: 3
+[2023-06-26T21:37:35.806-0500][0.623s] CDS archive(s) mapped at: [0x0000000800000000-0x0000000800bc0000-0x0000000800bc0000), size 12320768, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+[2023-06-26T21:37:35.806-0500][0.623s] Compressed class space mapped at: 0x0000000801000000-0x0000000841000000, reserved size: 1073741824
+[2023-06-26T21:37:35.806-0500][0.623s] Narrow klass base: 0x0000000800000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+[2023-06-26T21:37:35.851-0500][0.669s] Cancelling GC: Stopping VM
+[2023-06-26T21:37:35.866-0500][0.683s] Heap
+[2023-06-26T21:37:35.866-0500][0.683s] Shenandoah Heap
+[2023-06-26T21:37:35.866-0500][0.683s]  16384M max, 16384M soft max, 16384M committed, 24576K used
+[2023-06-26T21:37:35.866-0500][0.683s]  2048 x 8192K regions
+[2023-06-26T21:37:35.866-0500][0.683s] Status: cancelled
+[2023-06-26T21:37:35.866-0500][0.683s] Reserved region:
+[2023-06-26T21:37:35.866-0500][0.683s]  - [0x0000000400000000, 0x0000000800000000) 
+[2023-06-26T21:37:35.866-0500][0.683s] Collection set:
+[2023-06-26T21:37:35.866-0500][0.683s]  - map (vanilla): 0x0000000000010800
+[2023-06-26T21:37:35.866-0500][0.683s]  - map (biased):  0x0000000000010000
+[2023-06-26T21:37:35.866-0500][0.683s] 
+[2023-06-26T21:37:35.866-0500][0.683s]  Metaspace       used 356K, committed 576K, reserved 1114112K
+[2023-06-26T21:37:35.866-0500][0.683s]   class space    used 22K, committed 128K, reserved 1048576K
+[2023-06-26T21:37:35.866-0500][0.683s] 
+[2023-06-26T21:37:35.866-0500][0.683s] GC STATISTICS:
+[2023-06-26T21:37:35.866-0500][0.683s]   "(G)" (gross) pauses include VM time: time to notify and block threads, do the pre-
+[2023-06-26T21:37:35.866-0500][0.683s]         and post-safepoint housekeeping. Use -Xlog:safepoint+stats to dissect.
+[2023-06-26T21:37:35.866-0500][0.683s]   "(N)" (net) pauses are the times spent in the actual GC code.
+[2023-06-26T21:37:35.866-0500][0.683s]   "a" is average time for each phase, look at levels to see if average makes sense.
+[2023-06-26T21:37:35.866-0500][0.683s]   "lvls" are quantiles: 0% (minimum), 25%, 50% (median), 75%, 100% (maximum).
+[2023-06-26T21:37:35.866-0500][0.683s] 
+[2023-06-26T21:37:35.866-0500][0.683s]   All times are wall-clock times, except per-root-class counters, that are sum over
+[2023-06-26T21:37:35.866-0500][0.683s]   all workers. Dividing the <total> over the root stage time estimates parallelism.
+[2023-06-26T21:37:35.866-0500][0.683s] 
+[2023-06-26T21:37:35.866-0500][0.683s]   Pacing delays are measured from entering the pacing code till exiting it. Therefore,
+[2023-06-26T21:37:35.866-0500][0.683s]   observed pacing delays may be higher than the threshold when paced thread spent more
+[2023-06-26T21:37:35.866-0500][0.683s]   time in the pacing code. It usually happens when thread is de-scheduled while paced,
+[2023-06-26T21:37:35.866-0500][0.683s]   OS takes longer to unblock the thread, or JVM experiences an STW pause.
+[2023-06-26T21:37:35.866-0500][0.683s] 
+[2023-06-26T21:37:35.866-0500][0.683s]   Higher delay would prevent application outpacing the GC, but it will hide the GC latencies
+[2023-06-26T21:37:35.866-0500][0.684s]   from the STW pause times. Pacing affects the individual threads, and so it would also be
+[2023-06-26T21:37:35.866-0500][0.684s]   invisible to the usual profiling tools, but would add up to end-to-end application latency.
+[2023-06-26T21:37:35.866-0500][0.684s]   Raise max pacing delay with care.
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s] Under allocation pressure, concurrent cycles may cancel, and either continue cycle
+[2023-06-26T21:37:35.866-0500][0.684s] under stop-the-world pause or result in stop-the-world Full GC. Increase heap size,
+[2023-06-26T21:37:35.866-0500][0.684s] tune GC heuristics, set more aggressive pacing delay, or lower allocation rate
+[2023-06-26T21:37:35.866-0500][0.684s] to avoid Degenerated and Full GC cycles.
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s]     0 successful concurrent GCs
+[2023-06-26T21:37:35.866-0500][0.684s]       0 invoked explicitly
+[2023-06-26T21:37:35.866-0500][0.684s]       0 invoked implicitly
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s]     0 Degenerated GCs
+[2023-06-26T21:37:35.866-0500][0.684s]       0 caused by allocation failure
+[2023-06-26T21:37:35.866-0500][0.684s]       0 upgraded to Full GC
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s]     0 Full GCs
+[2023-06-26T21:37:35.866-0500][0.684s]       0 invoked explicitly
+[2023-06-26T21:37:35.866-0500][0.684s]       0 invoked implicitly
+[2023-06-26T21:37:35.866-0500][0.684s]       0 caused by allocation failure
+[2023-06-26T21:37:35.866-0500][0.684s]       0 upgraded from Degenerated GC
+[2023-06-26T21:37:35.866-0500][0.684s] 
+[2023-06-26T21:37:35.866-0500][0.684s] 
