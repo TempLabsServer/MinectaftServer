@@ -174,3 +174,5 @@ config-version: 12
 stats:
   disable-saving: false
   forced-stats: {}
+settings:
+  netty-threads: 6
